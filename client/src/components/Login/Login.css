@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.con-1 {
+    width: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    width: 80%;
+    /* Adjusted width for responsiveness */
+    max-width: 500px;
+    /* Added max-width to prevent it from becoming too wide on larger screens */
+    padding: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 10%;
+    }
+
+    .con-1 {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+/* Media Query for Medium Screens */
+@media (min-width: 601px) and (max-width: 1200px) {
+    .con-1 {
+        width: 70%;
+    }
+}
