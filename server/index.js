@@ -23,7 +23,7 @@ app.use(cookieParser())
 
 // Database Connection
 
-const Connection = mongoose.connect("mongodb://root:root@localhost:27017/")
+const Connection = mongoose.connect("mongodb+srv://codedemon434:04EErK3dXfvR9DaX@authentication.8ghho9q.mongodb.net/?retryWrites=true&w=majority")
 .then(console.log("Connection Successfully"))
 .catch((err)=>console.log(err))
 
